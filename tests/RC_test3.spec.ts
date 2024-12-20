@@ -1,14 +1,15 @@
 const { test, expect, request } = require('@playwright/test');
 
 
-test('POST API to create a project with name "playtest" and access token', async () => {
+test('Fetch all projects and delete them', async () => {
   // Create a new API request context
   const apiContext = await request.newContext();
 
   // Define the access token
   const token = '3PUgAkBbeTV2Us5NVyXW';
 
-  // Define the API endpoint and request body
+  // API base URL
+
   const apiUrl = 'http://localhost/api/v4/projects/';
   const requestBody = {
     name: 'playtest'
@@ -34,18 +35,6 @@ test('POST API to create a project with name "playtest" and access token', async
   // Validate the response structure
   expect(responseBody).toHaveProperty('id'); // Check if the response contains an 'id'
   expect(responseBody.name).toBe('playtest'); // Ensure the name matches the input
-});
-
-
-test('Fetch all projects and delete them', async () => {
-  // Create a new API request context
-  const apiContext = await request.newContext();
-
-  // Define the access token
-  const token = '3PUgAkBbeTV2Us5NVyXW';
-
-  // API base URL
-  const apiUrl = 'http://localhost/api/v4/projects/';
 
   // Step 1: Fetch all projects
   const getResponse = await apiContext.get(apiUrl, {
