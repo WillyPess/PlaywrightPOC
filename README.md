@@ -7,6 +7,8 @@ end-to-end test automation using Playwright. The project focuses on
 reliable browser automation, structured test design, and maintainable
 practices that can scale and integrate with CI/CD pipelines.
 
+![Demonstração do Fluxo de Checkout](videoDoc/playwright1.gif)
+
 ## Key Features
 
 -   End-to-end UI test automation with Playwright
@@ -19,23 +21,8 @@ practices that can scale and integrate with CI/CD pipelines.
 
 -   Playwright
 -   Node.js
--   JavaScript (or TypeScript, if used)
--   Git
+-   TypeScript
 
-## Project Structure
-
-Adjust this section to match your actual folders if needed.
-
--   `tests/`\
-    Test specifications and scenarios
--   `pages/`\
-    Page Objects (POM) and selectors
--   `utils/`\
-    Helpers, data builders, and shared functions
--   `playwright.config.*`\
-    Playwright configuration
--   `package.json`\
-    Dependencies and scripts
 
 ## Getting Started
 
@@ -88,19 +75,6 @@ enabled, you can open it with:
 ``` bash
 npx playwright show-report
 ```
-
-## CI/CD (Optional)
-
-This project can be integrated into CI/CD pipelines (GitHub Actions,
-GitLab CI, Jenkins). If you want, add a workflow to run tests
-automatically on pushes and pull requests.
-
-## Notes
-
--   If the target website requires credentials, store them using
-    environment variables rather than hardcoding.
--   Keep selectors stable and prefer data-testid attributes when
-    available.
 
 ## Contact
 
