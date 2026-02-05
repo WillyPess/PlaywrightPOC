@@ -1,4 +1,4 @@
-# PlaywrightPOC
+# Playwright Automation Project — Sauce Labs E2E Testing
 
 ## Overview
 
