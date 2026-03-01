@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../pages/LoginPage';
 import { users } from '../data/users';
-import { InventoryPage } from '../../pages/inventoryPage';
-import { CartPage } from '../../pages/cartPage';
+import { InventoryPage } from '../../pages/InventoryPage';
+import { CartPage } from '../../pages/CartPage';
 
 test.describe('Cart Check', () => {
 

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../pages/LoginPage';
 import { users } from '../data/users';
-import { InventoryPage } from '../../pages/inventoryPage';
+import { InventoryPage } from '../../pages/InventoryPage';
 
 test.describe('Inventory Check', () => {
 
