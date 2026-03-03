@@ -9,6 +9,10 @@ practices that can scale and integrate with CI/CD pipelines.
 
 ![Demonstração do Fluxo de Checkout](videoDoc/playwright1.gif)
 
+CI/CD
+<img width="1882" height="890" alt="image" src="https://github.com/user-attachments/assets/0695f20d-ecad-459e-8ac8-f1b8e7d4b2bb" />
+
+
 ## Key Features
 
 -   End-to-end UI test automation with Playwright
